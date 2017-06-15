@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #zongbu {
+            width: 100%;
+        }
+        
+        #soukuang {
+            width: 100%;
+            height: 4.5rem;
+            background-color: #cccccc;
+        }
+        
+        #sousuo {
+            width: 75%;
+            height: 50%;
+            border-radius: 0.4rem;
+            border: 0;
+            outline: none;
+            margin-top: 0.9rem;
+            margin-left: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        #zong {
+            width: 2.5rem;
+            height: 3rem;
+            position: absolute;
+            left: 87%;
+            top: 0.2rem;
+        }
+        
+        #tuxiang {
+            width: 4rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            background: url(img/1.png) no-repeat -110px -388px;
+            margin-left: -0.5rem;
+        }
+        
+        #zong p {
+            color: #099FDE;
+            margin-left: 0.4rem;
+        }
+        
+        #lunbo {
+            width: 100%;
+            height: 6rem;
+            background-color: red;
+        }
+        
+        #gezhong {
+            width: 100%;
+            height: 28rem;
+            background-color: blue;
+        }
+        
+        #jiudian {
+            float: left;
+            width: 96%;
+            height: 20%;
+            margin-left: 2%;
+            margin-top: 1rem;
+        }
+        
+        #yikuang {
+            float: left;
+            width: 33.1%;
+            height: 6.07em;
+            border-radius: 0.3rem 0 0 0.3rem;
+            border-right: 1px solid white;
+            text-align: center;
+            line-height: 6em;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        #erkuang {
+            float: left;
+            width: 33.1%;
+            height: 6.04em;
+            border-right: 1px solid white;
+        }
+        
+        #sankuang {
+            float: left;
+            width: 33.1%;
+            height: 6em;
+        }
+        
+        #fen1 {
+            width: 100%;
+            height: 3em;
+            text-align: center;
+            line-height: 3em;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        #fen3 {
+            width: 100%;
+            height: 3em;
+            border-bottom: 1px solid white;
+            border-radius: 0 0.3rem 0 0;
+            text-align: center;
+            line-height: 3em;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        #fen4 {
+            width: 100%;
+            height: 3em;
+            border-radius: 0 0 0.3rem 0;
+            text-align: center;
+            line-height: 3em;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        #fen5 {
+            width: 100%;
+            height: 3em;
+            border-bottom: 1px solid white;
+            border-radius: 0.3rem 0 0 0;
+            text-align: center;
+            line-height: 3em;
+            color: white;
+            font-weight: bolder;
+        }
+        
+        #fen6 {
+            width: 100%;
+            height: 3em;
+            border-radius: 0 0 0 0.3rem;
+            text-align: center;
+            line-height: 3em;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="zongbu">
+        <div id="soukuang">
+            <input id="sousuo" type="text" name="" value="" placeholder="搜索:目的地/酒店/景点/航班号">
+            <div id="zong">
+                <div id="tuxiang"></div>
+                <p>我的</p>
+            </div>
+
+        </div>
+        <div id="lunbo"></div>
+        <div id="gezhong">
+            <div id="jiudian">
+                <div id="yikuang" style="background-color:#FF697A">酒店</div>
+                <div id="erkuang">
+                    <div id="fen1" style="background-color:#FF697A;border-bottom: 1px solid white;">海外酒店</div>
+                    <div id="fen1" style="background-color:#FF697A">特价酒店</div>
+                </div>
+                <div id="sankuang">
+                    <div id="fen3" style="background-color:#FF697A">团购</div>
+                    <div id="fen4" style="background-color:#FF697A">民宿·客栈</div>
+                </div>
+            </div>
+            <div id="jiudian">
+                <div id="yikuang" style="background-color:#3D98FF">机票</div>
+                <div id="erkuang">
+                    <div id="fen1" style="background-color:#3D98FF;border-bottom: 1px solid white;">火车票·抢票</div>
+                    <div id="fen1" style="background-color:#3D98FF">特价机票</div>
+                </div>
+                <div id="sankuang">
+                    <div id="fen3" style="background-color:#3D98FF">汽车票·船票</div>
+                    <div id="fen4" style="background-color:#3D98FF">专车·租车</div>
+                </div>
+            </div>
+            <div id="jiudian">
+                <div id="yikuang" style="background-color:#44C522">旅游</div>
+                <div id="erkuang">
+                    <div id="fen1" style="background-color:#44C522;border-bottom: 1px solid white;">目的地攻略</div>
+                    <div id="fen1" style="background-color:#44C522">周边游</div>
+                </div>
+                <div id="sankuang">
+                    <div id="fen3" style="background-color:#44C522">邮轮</div>
+                    <div id="fen4" style="background-color:#44C522">定制旅行</div>
+                </div>
+            </div>
+            <div id="jiudian">
+                <div id="yikuang">
+                    <div id="fen5" style="background-color:#FC9720">景点·玩乐</div>
+                    <div id="fen6" style="background-color:#FC9720">礼品卡</div>
+                </div>
+                <div id="erkuang">
+                    <div id="fen1" style="background-color:#FC9720;border-bottom: 1px solid white;">美食林</div>
+                    <div id="fen1" style="background-color:#FC9720">WiFi·电话卡</div>
+                </div>
+                <div id="sankuang">
+                    <div id="fen3" style="background-color:#FC9720">全球购·换汇</div>
+                    <div id="fen4" style="background-color:#FC9720">保险·签证</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
